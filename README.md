@@ -10,9 +10,11 @@ Prerequisites
 - Composer (https://getcomposer.org/Composer-Setup.exe)
 - Git and Git Bash (https://git-scm.com/download/win)
 
-### Instalation
+### Installation
 - To Start Installation 
+```bash
 Open XAMPP and start Apache and MySQL
+```
 
 - To clone repository
 ```bash
@@ -24,6 +26,7 @@ php artisan key:generate
 ```
 
 - To change name in browser
+```bash
 Open notepad (Run as administrator). File > Open.
 Go to C:\Windows\System32\drivers\etc\hosts
 Put in the last line
@@ -45,22 +48,28 @@ Go to C:\xampp\apache\conf\extra\httpd-vhosts.conf and add the ff in the last li
 		</Directory>
 	</VirtualHost>
 Save.
-
+```
 
 - To create table in database
+```bash
 Go to http://localhost/phpmyadmin/
 Create database (Click Databases)named cbcc
+```
+
+Go to GIT
 
 ```bash
 	php artisan migrate
 ```
 
 - To start the app
+```bash
 Open browser (preferably Chrome).
 Go to cbcc.me
 Go to Register
 Register
 You will be directed to main page.
+```
 
 
 
