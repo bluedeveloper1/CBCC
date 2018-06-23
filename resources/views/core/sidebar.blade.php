@@ -2,11 +2,29 @@
   <nav class="sidebar-nav">
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="/"><i class="icon-speedometer"></i> Dashboard </a>
+        <a class="nav-link" href="/main/home"><i class="icon-home"></i> Home </a>
+      </li>
+      <li class="nav-title">
+        Manage
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/main/members"><i class="icon-user"></i> Members </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/main/ministries"><i class="icon-heart"></i> Ministries </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/main/transactions"><i class="icon-plus"></i> Add Transactions </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/main/view"><i class="icon-pie-chart"></i> View Transactions </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/main/expenses"><i class="icon-tag"></i> Expenses </a>
       </li>
 
       <li class="nav-title">
-        UI Elements
+        Use to edit
       </li>
       <li class="nav-item nav-dropdown">
         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
@@ -75,13 +93,6 @@
           </li>
         </ul>
       </li>
-      <li class="nav-item mt-auto">
-        <a class="nav-link nav-link-success" href="http://coreui.io/" target="_top"><i class="icon-cloud-download"></i> Download CoreUI</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-link-danger" href="http://coreui.io/pro/" target="_top"><i class="icon-layers"></i> Try CoreUI <strong>PRO</strong></a>
-      </li>
-
     </ul>
   </nav>
   <button class="sidebar-minimizer brand-minimizer" type="button"></button>

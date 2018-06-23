@@ -30,6 +30,13 @@ Route::middleware('auth')->group(function() {
 	Route::view('/sample/icons-simple-line', 'samples.simple-line-icons');
 	Route::view('/sample/widgets','samples.widgets');
 	Route::view('/sample/charts','samples.charts');
+
+	Route::view('/main/home','main.home');
+	Route::view('/main/members','main.members');
+	Route::view('/main/ministries','main.ministries');
+	Route::view('/main/transactions','main.transactions');
+	Route::view('/main/view','main.view');
+	Route::view('/main/expenses','main.expenses');
 });
 // Section Pages
 Route::view('/sample/error404','errors.404')->name('error404');
