@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-
+<!-- Comment here -->
 <div class="container-fluid">
   <div class="animated fadeIn">
 
