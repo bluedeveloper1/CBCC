@@ -31,7 +31,7 @@
       <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
         @if (Auth::check())
           <img src="https://www.gravatar.com/avatar/{{md5(strtolower(trim(Auth::user()->email)))}}?s=160&d=retro" class="img-avatar" alt="{{ Auth::user()->email }}">
         @else
@@ -60,11 +60,8 @@
         </a>
         {{-- <a class="dropdown-item" href="{{ route('logout') }}"><i class="fa fa-lock"                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();"></i> Logout</a> --}}
       </div>
-    </li>
+    </li> 
   </ul>
-  <button class="navbar-toggler aside-menu-toggler" type="button">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
   {{ csrf_field() }}
 </form>
