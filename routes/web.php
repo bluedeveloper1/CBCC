@@ -37,6 +37,8 @@ Route::middleware('auth')->group(function() {
 	Route::view('/main/transactions','main.transactions');
 	Route::view('/main/view','main.view');
 	Route::view('/main/expenses','main.expenses');
+
+	Route::view('/main/member','main.member');
 });
 // Section Pages
 Route::view('/sample/error404','errors.404')->name('error404');

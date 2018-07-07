@@ -11,7 +11,7 @@
         <a class="nav-link" href="/main/members"><i class="icon-user"></i> Members </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/main/ministries"><i class="icon-heart"></i> Ministries </a>
+        <a class="nav-link" href="/main/ministries"><i class="icon-heart"></i> Ministry </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/main/transactions"><i class="icon-plus"></i> Add Transactions </a>

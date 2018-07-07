@@ -63,7 +63,7 @@
                 </tr>
                 <tr>
                   <td>Sarmiento</td>
-                  <td>James-Andrew</td>
+                  <td>Justne</td>
                   <td>Rodriguez</td>
                   <td>2012/02/01</td>
                   <td>
@@ -135,6 +135,7 @@
           </div>
           <div class="modal-body">
             <div class="col-md-12">
+              <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                 <div class="card-body">
                   <div class="row">
                     <div class="form-group col-sm-4">
@@ -150,7 +151,7 @@
                     <div class="form-group col-sm-3">
                         <label for="middlename">Middle Name</label>
                         <input type="text" class="form-control" id="middlename" placeholder="Middle Name">
-                      </div>
+                    </div>
                   </div>
                   <div class="form-group">
                     <label for="address">Address</label>
@@ -307,7 +308,8 @@
                     </div>
                   </div>
 
-                </div>
+                </div><!-- cardbody -->
+              </form>
               </div>
             </div>
           <div class="modal-footer">
