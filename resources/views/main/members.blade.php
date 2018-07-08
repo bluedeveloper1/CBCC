@@ -24,126 +24,6 @@
             </div>
         </div>
 
-<<<<<<< Updated upstream
-    <div class="row">
-      <div class="col-lg-12">
-        <!--<div class="card">
-          <div class="card-body">-->
-              <table class="table table-responsive-sm table-outline white-bg">
-              <thead class="thead-light">
-                <tr>
-                  <th>Last Name</th>
-                  <th>First Name</th>
-                  <th>Middle Name</th>
-                  <th>Date of Birth</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Sarmiento</td>
-                  <td>James-Andrew</td>
-                  <td>Rodriguez</td>
-                  <td>2012/02/01</td>
-                  <td>
-                      <button type="button" class="btn btn-outline-primary btn-sm">View</button>
-                      <button type="button" class="btn btn-outline-warning btn-sm">Edit</button>
-                      <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Lingo</td>
-                  <td>Jurim</td>
-                  <td>Justan</td>
-                  <td>2012/02/01</td>
-                  <td>
-                      <button type="button" class="btn btn-outline-primary btn-sm">View</button>
-                      <button type="button" class="btn btn-outline-warning btn-sm">Edit</button>
-                      <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Sarmiento</td>
-                  <td>Justne</td>
-                  <td>Rodriguez</td>
-                  <td>2012/02/01</td>
-                  <td>
-                      <button type="button" class="btn btn-outline-primary btn-sm">View</button>
-                      <button type="button" class="btn btn-outline-warning btn-sm">Edit</button>
-                      <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Sarmiento</td>
-                  <td>James-Andrew</td>
-                  <td>Rodriguez</td>
-                  <td>2012/02/01</td>
-                  <td>
-                      <button type="button" class="btn btn-outline-primary btn-sm">View</button>
-                      <button type="button" class="btn btn-outline-warning btn-sm">Edit</button>
-                      <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Sarmiento</td>
-                  <td>James-Andrew</td>
-                  <td>Rodriguez</td>
-                  <td>2012/02/01</td>
-                  <td>
-                      <button type="button" class="btn btn-outline-primary btn-sm">View</button>
-                      <button type="button" class="btn btn-outline-warning btn-sm">Edit</button>
-                      <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Sarmiento</td>
-                  <td>James-Andrew</td>
-                  <td>Rodriguez</td>
-                  <td>2012/02/01</td>
-                  <td>
-                      <button type="button" class="btn btn-outline-primary btn-sm">View</button>
-                      <button type="button" class="btn btn-outline-warning btn-sm">Edit</button>
-                      <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
-                  </td>
-                </tr>
-              </tbody>
-          </table>
-          <nav>
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-              <li class="page-item active">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav>
-        <!--</div>
-      </div>-->
-    </div>
-
-    <!--modal-->
-    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myAddModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Member Info</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="col-md-12">
-              <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="form-group col-sm-4">
-                      <label for="lastname">Last Name</label>
-                      <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                    </div>
-=======
         <div class="row">
             <div class="col-lg-12">
                 <!--<div class="card">
@@ -261,30 +141,12 @@
                                             <label for="lastname">Last Name</label>
                                             <input type="text" class="form-control" id="lastname" placeholder="Last Name">
                                         </div>
->>>>>>> Stashed changes
 
                                         <div class="form-group col-sm-5">
                                             <label for="firstname">First Name</label>
                                             <input type="text" class="form-control" id="firstname" placeholder="First Name">
                                         </div>
 
-<<<<<<< Updated upstream
-                    <div class="form-group col-sm-3">
-                        <label for="middlename">Middle Name</label>
-                        <input type="text" class="form-control" id="middlename" placeholder="Middle Name">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Enter Complete Address">
-                  </div>
-                  
-                  <div class="row">
-                    <div class="form-group col-sm-4">
-                      <label for="birthdate">Date of Birth</label>
-                      <input type="date" class="form-control" id="birthdate" placeholder="">
-                    </div>
-=======
                                         <div class="form-group col-sm-3">
                                             <label for="middlename">Middle Name</label>
                                             <input type="text" class="form-control" id="middlename" placeholder="Middle Name">
@@ -294,7 +156,6 @@
                                         <label for="address">Address</label>
                                         <input type="text" class="form-control" id="address" placeholder="Enter Complete Address">
                                     </div>
->>>>>>> Stashed changes
 
                                     <div class="row">
                                         <div class="form-group col-sm-4">
@@ -435,11 +296,6 @@
                                             <input class="form-control" type="date" id="salvation" placeholder="Date">
                                         </div>
 
-<<<<<<< Updated upstream
-                </div><!-- cardbody -->
-              </form>
-              </div>
-=======
                                         <div class="form-group col-sm-4">
                                             <label for="baptized">Date Baptized</label>
                                             <input class="form-control" type="date" id="baptized" placeholder="Date">
@@ -462,7 +318,6 @@
                     <!-- /.modal-content -->
                 </div>
                 <!-- /.modal-dialog -->
->>>>>>> Stashed changes
             </div>
             <!--modal-->
         </div>
