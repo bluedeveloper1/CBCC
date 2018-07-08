@@ -3,71 +3,6 @@
 
 <div class="container-fluid">
 
-<<<<<<< Updated upstream
-  <div class="animated fadeIn">
-  
-
-      <div class="card">
-          <div class="card-body">
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-facebook" style="margin-bottom: 4px">
-                    <span>Facebook</span>
-                </button>
-            </div>    
-          </div>
-          
-      </div>
-      <div class="col-md-6">
-
-        <div class="card">
-            <div class="card-header">
-              <strong>Horizontal</strong>
-              Form
-            </div>
-            <div class="card-body">
-              <form action="" method="post" class="form-horizontal">
-                <div class="form-group row">
-                  <label class="col-md-3 col-form-label" for="hf-email">Email</label>
-                  <div class="col-md-9">
-                    <input type="email" id="hf-email" name="hf-email" class="form-control" placeholder="Enter Email..">
-                    <span class="help-block">Please enter your email</span>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-md-3 col-form-label" for="hf-password">Password</label>
-                  <div class="col-md-9">
-                    <input type="password" id="hf-password" name="hf-password" class="form-control" placeholder="Enter Password..">
-                    <span class="help-block">Please enter your password</span>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="card-footer">
-              <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
-              <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
-            </div>
-          </div>
-      </div>
-    <!--/.row-->
-
-    <div class="row">
-      <div class="col-sm-6 col-lg-3">
-        <div class="social-box facebook">
-          <i class="fa fa-facebook"></i>
-          <div class="chart-wrapper">
-            <canvas id="social-box-chart-1" height="90"></canvas>
-          </div>
-          <ul>
-            <li>
-              <strong>89k</strong>
-              <span>friends</span>
-            </li>
-            <li>
-              <strong>459</strong>
-              <span>feeds</span>
-            </li>
-          </ul>
-=======
     <div class="animated fadeIn">
         <div class="row">
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -78,7 +13,6 @@
                     <i class="fa fa-user-plus"></i> &nbsp; Add New Ministry
                 </button>
             </div>
->>>>>>> Stashed changes
         </div>
         
         <div class="row">
