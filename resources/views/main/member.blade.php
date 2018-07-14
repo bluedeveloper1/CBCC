@@ -71,56 +71,66 @@
                         </div>
                         
                         <div class="col-md-12">
-                            <h5 class="mt-2">Summary of Givings</h5>
+                            <h5 class="mt-2">Summary of Givings this Year</h5>
                             <div class="col-md-12">
-                                <table class="table table-responsive-sm table-bordered table-sm">
-                                    <tbody>
-                                        <thead>
-                                            <tr>
-                                                <th>Date Given</th>
-                                                <th>Service</th>
-                                                <th>Total Amount</th>
-                                            </tr>
-                                        </thead>                                    
-                                        <tr>
-                                            <td>11-24-2017</td>
-                                            <td>Gospel</td>
-                                            <td>280.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11-25-2017</td>
-                                            <td>Worship</td>
-                                            <td>211.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11-26-2017</td>
-                                            <td>Gospel</td>
-                                            <td>2822.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11-29-2017</td>
-                                            <td>Gospel</td>
-                                            <td>180.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11-30-2017</td>
-                                            <td>Worship</td>
-                                            <td>80.00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <nav>
-                                    <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                                    <li class="page-item active">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                    </ul>
-                                </nav>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body p-0 clearfix">
+                                            <em class="bg-primary p-4 font-2xl mr-3 float-left">C</em>
+                                            <div class="h5 text-primary mb-0 pt-3">&#8369;1,500.50</div>
+                                            <div class="text-muted text-uppercase font-weight-bold font-xs">Care</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body p-0 clearfix">
+                                            <em class="bg-success p-4 font-2xl mr-3 float-left">C</em>
+                                            <div class="h5 text-primary mb-0 pt-3">&#8369;2,500.50</div>
+                                            <div class="text-muted text-uppercase font-weight-bold font-xs">Choir</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body p-0 clearfix">
+                                            <em class="bg-warning p-4 font-2xl mr-3 float-left">T</em>
+                                            <div class="h5 text-primary mb-0 pt-3">&#8369;20,000</div>
+                                            <div class="text-muted text-uppercase font-weight-bold font-xs">Tithes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body p-0 clearfix">
+                                            <em class="bg-primary p-4 font-2xl mr-3 float-left">M</em>
+                                            <div class="h5 text-primary mb-0 pt-3">&#8369;2,500</div>
+                                            <div class="text-muted text-uppercase font-weight-bold font-xs">M&M</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body p-0 clearfix">
+                                            <em class="bg-success p-4 font-2xl mr-3 float-left">Y</em>
+                                            <div class="h5 text-success mb-0 pt-3">&#8369;400</div>
+                                            <div class="text-muted text-uppercase font-weight-bold font-xs">YDC</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body p-0 clearfix">
+                                            <em class="bg-secondary p-4 font-2xl mr-3 float-left">C</em>
+                                            <div class="h5 text-primary mb-0 pt-3">&#8369;3,500</div>
+                                            <div class="text-muted text-uppercase font-weight-bold font-xs">Creative Team</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,56 +269,38 @@
                 </div> <!-- description -->
                 <div class="tab-pane" id="accounts">
                     <div class="col-md-12">
-                        <h5 class="mt-2">James' Computer Store</h5>
-                        <div class="col-md-12">
+                        <h5 class="mt-2">James Computer Store</h5>
+                        <div class="col-md-5 offset-md-4">
                             <table class="table table-responsive-sm table-bordered table-sm">
                                 <tbody>
                                     <thead>
                                         <tr>
-                                            <th>Date Given</th>
-                                            <th>Service</th>
-                                            <th>Total Amount</th>
+                                            <th>Ministry</th>
+                                            <th>Amount</th>
                                         </tr>
                                     </thead>                                    
                                     <tr>
-                                        <td>11-24-2017</td>
-                                        <td>Gospel</td>
+                                        <td>Choir</td>
                                         <td>280.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-25-2017</td>
-                                        <td>Worship</td>
-                                        <td>211.00</td>
+                                        <td>Care</td>
+                                        <td>1280.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-26-2017</td>
-                                        <td>Gospel</td>
-                                        <td>2822.00</td>
+                                        <td>M&M</td>
+                                        <td>430.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-29-2017</td>
-                                        <td>Gospel</td>
-                                        <td>180.00</td>
+                                        <td>Creative Team</td>
+                                        <td>220.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-30-2017</td>
-                                        <td>Worship</td>
-                                        <td>80.00</td>
+                                        <td>YDC</td>
+                                        <td>330.50</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <nav>
-                                <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">1</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                     
@@ -316,55 +308,37 @@
 
                     <div class="col-md-12">
                         <h5 class="mt-2">James-Dorothy</h5>
-                        <div class="col-md-12">
+                        <div class="col-md-5 offset-md-4">
                             <table class="table table-responsive-sm table-bordered table-sm">
                                 <tbody>
                                     <thead>
                                         <tr>
-                                            <th>Date Given</th>
-                                            <th>Service</th>
-                                            <th>Total Amount</th>
+                                            <th>Ministry</th>
+                                            <th>Amount</th>
                                         </tr>
                                     </thead>                                    
                                     <tr>
-                                        <td>11-24-2017</td>
-                                        <td>Gospel</td>
+                                        <td>Choir</td>
                                         <td>280.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-25-2017</td>
-                                        <td>Worship</td>
-                                        <td>211.00</td>
+                                        <td>Care</td>
+                                        <td>1280.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-26-2017</td>
-                                        <td>Gospel</td>
-                                        <td>2822.00</td>
+                                        <td>M&M</td>
+                                        <td>430.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-29-2017</td>
-                                        <td>Gospel</td>
-                                        <td>180.00</td>
+                                        <td>Creative Team</td>
+                                        <td>220.00</td>
                                     </tr>
                                     <tr>
-                                        <td>11-30-2017</td>
-                                        <td>Worship</td>
-                                        <td>80.00</td>
+                                        <td>YDC</td>
+                                        <td>330.50</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <nav>
-                                <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">1</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div> <!-- edit -->
@@ -384,6 +358,12 @@
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addRelatedModal">
                 <i class="fa fa-id-card fa-lg"></i>&nbsp; Add Account
             </button>
+            <h6 class="mt-2"></h6>    
+            <div class="col-md-12">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addCommitmentModal">
+                    <i class="fa fa-money fa-lg"></i>&nbsp; Add First Fruit Commitment
+                </button>
+            </div>           
         </div>
     </div>
 
@@ -415,6 +395,56 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
+    <!-- Modal Section -->
+    <div class="modal fade" id="addCommitmentModal" tabindex="-1" role="dialog" aria-labelledby="addCommitmentModal" aria-hidden="true">
+      <div class="modal-dialog modal-success" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Add New Commitment</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="ffaccount">Name of Account</label>
+                                <select id="ffaccount" name="ffaccount" class="form-control">
+                                    <option value="0">James-Andrew Sarmiento</option>
+                                    <option value="1">James' Computer Store</option>
+                                    <option value="2">James-Dorothy</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="ffyear">Year</label>
+                                <input type="number" id="ffyear" name="ffyear" class="form-control" placeholder="Enter Year">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="ffcommitment">Commitment Amount</label>
+                                <input type="number" id="ffcommitment" name="ffcommitment" class="form-control" placeholder="Enter Commitment">
+                            </div>
+                        </div>
+                    </div>                           
+                </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
 
 
   </div>
