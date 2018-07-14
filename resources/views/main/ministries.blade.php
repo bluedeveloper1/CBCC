@@ -27,7 +27,7 @@
 
         <?php
         $classes = array("bg-primary", "bg-info", "bg-warning", "bg-danger");
-
+        $x=0;
         ?>
 
 
@@ -36,16 +36,13 @@
             @foreach($ministries->all() as $ministries)
 
             <div class="col-sm-6 col-lg-3">
-                <div class="card text-white <?php
-                            $x=0;
-                            if($x<=3){
-                                echo $classes[$x++];
-                            } else{
-                                $x=0;
-                            }
-
-
-                            ?>">
+                <div class="card text-white {{$classes[$x]}}">
+                            @php
+                                if($x < 3)
+                                    $x++;
+                                elseif ($x == 3) 
+                                    $x = 0;
+                            @endphp
                     <div class="card-body pb-0">
                         <div class="btn-group float-right">
                             <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -171,57 +168,44 @@
                 </div>
                 <div class="modal-body">
                     <div class="col-sm-12">
+                        <form method="POST" action="{{ route('ministries.update','test') }}">
+                            {{csrf_field()}}
+                            <fieldset>
+                                <!--Error Handling-->
+                                @if(count($errors)>0)
+                                @foreach($errors->all() as $error)
+                                <div class = "alert alert-danger">
+                                    {{ $error }}
+                                </div>
+                                @endforeach
+                                @endif
+                                <!--End of Error Handling-->
 
-                        <div class="card">
-                            <div class="card-header">
-                                <strong>Ministry</strong>
-                                <small>Form</small>
-                            </div>
+                                <div class="form-group">
+                                    <label for="lbl-ministry">Ministry</label>
+                                    <input type="text" class="form-control"  name="ministry-name" id="ministry-name" placeholder="Enter name of the Ministry">
+                                </div>
 
-                            <div class="card-body">
-                                <form method="POST" action="{{ route('ministries.update','test') }}">
+                                <div class="form-group">
+                                    <label for="lbl-funds">Funds</label>
+                                    <input type="number" class="form-control" name="ministry-funds" id="ministry-funds" placeholder="Enter funds of the Ministry">
+                                </div>
 
-                                    {{csrf_field()}}
+                                <div class="form-group">
+                                    <label for="lbl-type">Type of Ministry:</label>&nbsp;
+                                    <select name="ministry-type form-control">
+                                        <option value="Main">Main Ministry</option>
+                                        <option value="Sub">Special Ministry</option>
+                                    </select>
+                                </div>
 
-                                    <fieldset>
-                                        <!--Error Handling-->
-                                        @if(count($errors)>0)
-                                        @foreach($errors->all() as $error)
-                                        <div class = "alert alert-danger">
-                                            {{ $error }}
-                                        </div>
-                                        @endforeach
-                                        @endif
-                                        <!--End of Error Handling-->
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                                        <div class="form-group">
-                                            <label for="lbl-ministry">Ministry</label>
-                                            <input type="text" class="form-control"  name="ministry-name" id="ministry-name" placeholder="Enter name of the Ministry">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="lbl-funds">Funds</label>
-                                            <input type="number" class="form-control" name="ministry-funds" id="ministry-funds" placeholder="Enter funds of the Ministry">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="lbl-type">Type of Ministry:</label>&nbsp
-                                            <select name="ministry-type">
-                                                <option value="Main">Main Ministry</option>
-                                                <option value="Sub">Sub Ministry</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Save Changes</button>
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                     <!--/.col-->
 
