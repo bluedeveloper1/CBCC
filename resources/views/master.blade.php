@@ -17,6 +17,9 @@
   <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
   <title>CoreUI - Open Source Bootstrap Admin Template</title>
 
+
+
+
   <!-- Icons -->
   <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/simple-line-icons.css') }}" rel="stylesheet">
