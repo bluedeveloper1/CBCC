@@ -120,7 +120,7 @@
 
             <!--modal-->
             <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myAddModal" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-dialog modal-md" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title">New Input</h4>
@@ -132,136 +132,136 @@
                             <div class="col-md-12">
                                 <div class="card-body">
                                     <form action method="post" enctype="multipart/form-data" class="form-horizontal">
- <!-- Date -->                                       
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="date">Date</label>
-                                            <div class="col-lg-12">
-                                                <input name="date_given" type="date" class="form-control"
-                                                required value="2018-07-13">
+ <!-- Date -->                            
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="date">Date</label>
+                                            <div class="col-md-9">
+                                            <input name="date_given" type="date"class="form-control" required value="2018-15-07">
                                             </div>
                                         </div>
 <!--Service -->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="date">Service</label>
-                                            <div class="col-lg-12">
-                                                <select class="form-control input-sm" name="service" required>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="date">Service</label>
+                                            <div class="col-md-9">
+                                                <select class="form-control input-sm" for="date" name="service" required>
                                                     <option value="1">Worship Service</option>
                                                     <option value="2">Gospel Hour Service</option>
                                                 </select>
                                             </div>
                                         </div>
  <!--Tithes-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Tithes</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="tithes">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Tithes</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="tithes">
                                             </div>
                                         </div>
  <!--Offering-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Offering</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="offering">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Offering</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="offering">
                                             </div>
                                         </div>
  <!--FF-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-4" for="time">First Fruit</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="ff">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">First Fruit</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="ff">
                                             </div>
                                         </div>
  <!--Mission-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Mission</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="mission">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Mission</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="Mission">
                                             </div>
                                         </div>
  <!--Care-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Care</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="care">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Care</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="care">
                                             </div>
-                                        </div>
+                                        </div>       
  <!--Ladies-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Ladies</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="ladies">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Ladies</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="ladies">
                                             </div>
                                         </div>
  <!--M&M's-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">M&M's</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="men">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">M&M's</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="men">
                                             </div>
                                         </div>
  <!--YDC-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">YDC</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="ydc">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">YDC</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="ydc">
                                             </div>
                                         </div>
  <!--Choir-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Choir</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="choir">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Choir</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="choir">
                                             </div>
                                         </div>
  <!--PrayerBreakfast-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-4" for="time">Prayer Breakfast</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="prayerbreakfast">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Prayer Breakfast</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="prayerbreakfast">
                                             </div>
                                         </div>
  <!--CircleofFaith-->
-                                         <div class="form-group">
-                                            <label class="control-label col-lg-4" for="time">Circle of Faith</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="circleoffaith">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Circle of Faith</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="CoF">
                                             </div>
                                         </div>
  <!--CreativeTeam-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-4" for="time">Creative Team</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="creativeteam">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Creative Team</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="creativeteam">
                                             </div>
                                         </div>
  <!--DVBS-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">DVBS</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="dvsb">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">DVBS</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="dvbs">
                                             </div>
                                         </div>
  <!--Others-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Others</label>
-                                            <div class="col-lg-12">
-                                                <input type="number" class="form-control qty1" name="others">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Others</label>
+                                            <div class="col-md-9">
+                                            <input type="number" class="form-control qty1" name="others">
                                             </div>
                                         </div>
  <!--Remarks-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Remarks</label>
-                                            <div class="col-lg-12">
-                                                <input type="text" class="form-control" name="remarks">
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Remarks</label>
+                                            <div class="col-md-9">
+                                            <input type="text" class="form-control qty1" name="remarks">
                                             </div>
                                         </div>
  <!--Total-->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="time">Total</label>
-                                            <div class="col-lg-12">
-                                                <input type="text" class="form-control" name="total" disabled>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="time">Total</label>
+                                            <div class="col-md-9">
+                                            <input type="text" class="form-control qty1" name="total" disabled>
                                             </div>
-                                        </div>                                        
+                                        </div>
+               
                                         <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         <button type="submit" class="btn btn-primary">Submit</button>            
@@ -276,8 +276,8 @@
                 <!-- /.modal-dialog -->
             </div>
             <!--modal-->
-        </div>
     </div>
+</div>
 
     @endsection
     <!-- /.conainer-fluid -->
