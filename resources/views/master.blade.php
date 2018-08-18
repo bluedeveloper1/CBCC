@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
   <title>CoreUI - Open Source Bootstrap Admin Template</title>
 
-
+ 
 
 
   <!-- Icons -->
@@ -69,4 +69,6 @@
   @yield('myscript')
 
 </body>
+      
+
 </html>

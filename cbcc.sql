@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 14, 2018 at 03:43 PM
+-- Generation Time: Aug 18, 2018 at 04:03 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -21,6 +21,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `cbcc`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `expenses`
+--
+
+CREATE TABLE `expenses` (
+  `id` int(11) NOT NULL,
+  `date` datetime NOT NULL,
+  `receiver` varchar(100) NOT NULL,
+  `service_type` varchar(100) NOT NULL,
+  `voucher_number` int(11) NOT NULL,
+  `amount` int(11) NOT NULL,
+  `ministry` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `expenses`
+--
+
+INSERT INTO `expenses` (`id`, `date`, `receiver`, `service_type`, `voucher_number`, `amount`, `ministry`) VALUES
+(1, '2018-07-10 13:00:00', 'Marion Quizan', 'Main Service', 1, 5000, 'YDC');
 
 -- --------------------------------------------------------
 
@@ -88,6 +111,18 @@ INSERT INTO `ministries` (`id`, `name`, `type`, `funds`, `updated_at`, `created_
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `particulars`
+--
+
+CREATE TABLE `particulars` (
+  `voucher_id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `amount` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `password_resets`
 --
 
@@ -125,6 +160,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 --
 
 --
+-- Indexes for table `expenses`
+--
+ALTER TABLE `expenses`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
@@ -152,6 +193,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `expenses`
+--
+ALTER TABLE `expenses`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `migrations`

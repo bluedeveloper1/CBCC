@@ -43,6 +43,7 @@
                                 elseif ($x == 3) 
                                     $x = 0;
                             @endphp
+                                          
                     <div class="card-body pb-0">
                         <div class="btn-group float-right">
                             <button type="button" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -158,7 +159,7 @@
 
     <!--- NEW MODAL FOR EDIT -->
     <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-primary" role="document">
+        <div class="modal-dialog modal-warning" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Edit Ministry</h4>
@@ -168,7 +169,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="col-sm-12">
-                        <form method="POST" action="{{ route('ministries.update','test') }}">
+                        <form method="POST" action="{{ url('/edit', array($ministries->id)) }}">
                             {{csrf_field()}}
                             <fieldset>
                                 <!--Error Handling-->
@@ -255,24 +256,26 @@
     </div>-->
     <!-- /.modal -->
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     @section('myscript')
-    <script src="{{ asset('js/views/main.js') }}"></script>
+        <script src="{{ asset('js/views/main.js') }}"></script>
     @endsection
 
     <script>
-        $('#edit').on('show.bs.modal', function (event) {
+        $(document).ready(function(){
+            $('#edit').on('show.bs.modal', function (event) {
+                console.log("dsafsdf");
+                var button = $(event.relatedTarget),
+                     name = button.data('name'),
+                         funds = button.data('funds'),
+                            //var id = button.data('id') 
+                             modal = $(this);
 
-            alert('MODAL OPENED');
-            console.log('waowao');
+                modal.find('.modal-body #ministry-name').val(name);
+                modal.find('.modal-body #ministry-funds').val(funds);
+                // modal.find('.modal-body #cat_id').val(id);
+            })
+        });
 
-            var button = $(event.relatedTarget),
-                var name = button.data('name'),
-                    var funds = button.data('funds'),
-                        //var id = button.data('id') 
-                        var modal = $(this);
-
-            modal.find('.modal-body #ministry-name').val(name);
-            modal.find('.modal-body #ministry-funds').val(funds);
-            // modal.find('.modal-body #cat_id').val(id);
-        })
     </script>

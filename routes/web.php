@@ -40,16 +40,27 @@ Route::middleware('auth')->group(function() {
 
     Route::view('/main/member','main.member');
 });
+
 // Section Pages
 Route::view('/sample/error404','errors.404')->name('error404');
 Route::view('/sample/error500','errors.500')->name('error500');
+
+//MINISTRY ROUTES
 //home-ministry
 Route::get('/main/ministries','HomeController@ministries');
 //add-ministry
 Route::post('/insert','HomeController@add_ministry');
+//edit-ministry
+Route::post('/edit/{id}','HomeController@edit_ministry');
 //delete-ministry
 Route::get('/delete/{id}','HomeController@delete_ministry');
 //show-profile-ministry
 Route::get('/show-profile/{id}','HomeController@show_profile_ministry');
 //resource
 Route::resource('ministries','HomeController');
+
+//EXPENSES ROUTES
+Route::get('/main/expenses','ExpenseController@expenses');
+
+//Add Expense
+Route::get('/insertExpense','ExpenseController@add_expense');
