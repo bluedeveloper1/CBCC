@@ -5,6 +5,21 @@
     <div class="animated fadeIn">
 
         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3  style="color: #20a8d8;"> Add Transactions </h2>
+                <!--Session Info Message-->
+                <div class="col-md-12 col-lg-12">
+                    @if(session('info'))
+                    <div class="alert alert-success">
+                        {{ session('info') }}
+                    </div>
+                    @endif
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-lg-12">
                 <div class="form-group">
                     <div class="controls">
@@ -22,14 +37,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <!--<div class="card">
-<div class="card-body">-->
-                <table class="table table-responsive-sm table-outline white-bg">
+                <div class="card-body">-->
+                <table class="table table-responsive-sm table-sm table-outline white-bg">
                     <thead class="thead-light">
                         <tr>
                             <th>Last Name</th>
                             <th>First Name</th>
                             <th>Middle Name</th>
-                            <th>Sex</th>
+                            <th>Account</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -38,66 +53,72 @@
                             <td>Sarmiento</td>
                             <td>James-Andrew</td>
                             <td>Rodriguez</td>
-                            <td>Male</td>
+                            <td><span class="badge badge-primary">Admin</span></td>
                             <td>
-                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
                                 data-target="#addModal">&nbsp;Input</button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                data-target="#">&nbsp;Edit</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Lingo</td>
                             <td>Jurim</td>
                             <td>Justan</td>
-                            <td>Male</td>
+                            <td><span class="badge badge-success">Member</span></td>
                             <td>
-                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
                                 data-target="#addModal">&nbsp;Input</button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                data-target="#">&nbsp;Edit</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Sarmiento</td>
                             <td>James-Andrew</td>
                             <td>Rodriguez</td>
-                            <td>Male</td>
+                            <td><span class="badge badge-danger">Guest</span></td>
                             <td>
-                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
                                 data-target="#addModal">&nbsp;Input</button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                data-target="#">&nbsp;Edit</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Sarmiento</td>
                             <td>James-Andrew</td>
                             <td>Rodriguez</td>
-                            <td>Male</td>
+                            <td><span class="badge badge-secondary">Others</span></td>
                             <td>
-                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
                                 data-target="#addModal">&nbsp;Input</button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                data-target="#">&nbsp;Edit</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Sarmiento</td>
                             <td>James-Andrew</td>
                             <td>Rodriguez</td>
-                            <td>Male</td>
+                            <td><span class="badge badge-secondary">Others</span></td>
                             <td>
-                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
                                 data-target="#addModal">&nbsp;Input</button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                data-target="#">&nbsp;Edit</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Sarmiento</td>
                             <td>James-Andrew</td>
                             <td>Rodriguez</td>
-                            <td>Male</td>
+                            <td><span class="badge badge-secondary">Others</span></td>
                             <td>
-                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
                                 data-target="#addModal">&nbsp;Input</button>
-                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" 
+                                data-target="#">&nbsp;Edit</button>
                             </td>
                         </tr>
                     </tbody>
@@ -166,8 +187,18 @@
  <!--FF-->
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="time">First Fruit</label>
-                                            <div class="col-md-9">
+                                            <div class="col-md-6">
                                             <input type="number" class="form-control qty1" name="ff">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="form-control input-sm" for="ffyear" name="ffyear" required>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                </select>
                                             </div>
                                         </div>
  <!--Mission-->

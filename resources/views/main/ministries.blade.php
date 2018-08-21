@@ -2,13 +2,12 @@
 @section('content')
 
 <div class="container-fluid">
-
     <div class="animated fadeIn">
-        <div class="row">
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <h2  style="color: #20a8d8;"> Church Ministries </h2> &nbsp
-                <!--Session Info Message-->
 
+        <div class="row margin-bottom-padding">
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <h3  style="color: #20a8d8;"> Church Ministries </h2> &nbsp
+                <!--Session Info Message-->
                 <div class="col-md-12 col-lg-12">
                     @if(session('info'))
                     <div class="alert alert-success">
@@ -19,7 +18,7 @@
                 </div>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">
+                <button type="button" class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#primaryModal">
                     <i class="fa fa-user-plus"></i> &nbsp; Add New Ministry
                 </button>
             </div>
@@ -77,10 +76,6 @@
         </div>
         <!--/.row-->
         @endif
-
-    </div>
-    @endsection
-    <!-- /.conainer-fluid -->
 
     <div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-primary" role="document">
@@ -156,7 +151,6 @@
     </div>
     <!-- /.modal -->
 
-
     <!--- NEW MODAL FOR EDIT -->
     <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-warning" role="document">
@@ -220,7 +214,7 @@
     <!-- /.modal -->
 
     <!--MODAL FOR DELETE-->
-<!--    <div class="modal fade" id="deleteministry" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--    <div class="modal fade" id="deleteministry" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-danger" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -255,27 +249,29 @@
         </div>
     </div>-->
     <!-- /.modal -->
+    </div>
+</div>
+ @endsection
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+@section('myscript')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ asset('js/views/main.js') }}"></script>
+@endsection
 
-    @section('myscript')
-        <script src="{{ asset('js/views/main.js') }}"></script>
-    @endsection
+<script>
+$(document).ready(function(){
+    $('#edit').on('show.bs.modal', function (event) {
+        console.log("dsafsdf");
+        var button = $(event.relatedTarget),
+                name = button.data('name'),
+                    funds = button.data('funds'),
+                    //var id = button.data('id') 
+                        modal = $(this);
 
-    <script>
-        $(document).ready(function(){
-            $('#edit').on('show.bs.modal', function (event) {
-                console.log("dsafsdf");
-                var button = $(event.relatedTarget),
-                     name = button.data('name'),
-                         funds = button.data('funds'),
-                            //var id = button.data('id') 
-                             modal = $(this);
+        modal.find('.modal-body #ministry-name').val(name);
+        modal.find('.modal-body #ministry-funds').val(funds);
+        // modal.find('.modal-body #cat_id').val(id);
+    })
+});
 
-                modal.find('.modal-body #ministry-name').val(name);
-                modal.find('.modal-body #ministry-funds').val(funds);
-                // modal.find('.modal-body #cat_id').val(id);
-            })
-        });
-
-    </script>
+</script>

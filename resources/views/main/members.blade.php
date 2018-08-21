@@ -4,12 +4,43 @@
 <div class="container-fluid">
     <div class="animated fadeIn">
 
+        <div class="row margin-bottom-padding">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h3  style="color: #20a8d8;"> Add Member </h2> &nbsp
+                <!--Session Info Message-->
+
+                <div class="col-md-12 col-lg-12">
+                    @if(session('info'))
+                    <div class="alert alert-success">
+                        {{ session('info') }}
+                    </div>
+                    @endif
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="pull-right">
+                    <div class="form-group">
+                        <div class="controls">
+                            <span class="pull-right">
+                            <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addModal">
+                                <i class="fa fa-vcard-o"><span>&nbsp;Member</span></i></button>
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#visitorModal">
+                                <i class="fa fa-user-circle"><span>&nbsp;Visitor</span></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="form-group">
                     <div class="controls">
                         <div class="input-group">
-                            <input id="appendedInputButton" class="form-control" size="16" type="text">
+                            <input id="appendedInputButton" class="form-control" type="text">
                             <span class="input-group-btn">
                                 <button class="btn btn-primary" type="button">Search</button>
                             </span>
@@ -17,23 +48,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-1 offset-sm-1">
-                <button type="button" class="btn btn-success rounded" data-toggle="modal" data-target="#addModal">
-                    <i class="fa fa-vcard-o"><span>&nbsp;Member</span></i>
-                </button>
-            </div>
-            <div class="col-md-1">
-                <button type="button" class="btn btn-danger rounded" data-toggle="modal" data-target="#visitorModal">
-                    <i class="fa fa-user-circle"><span>&nbsp;Visitor</span></i>
-                </button>
-            </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12">
                 <!--<div class="card">
                 <div class="card-body">-->
-                <table class="table table-responsive-sm table-outline white-bg">
+                <table class="table table-responsive-sm table-outline table-sm white-bg">
                     <thead class="thead-light">
                         <tr>
                             <th>Last Name</th>

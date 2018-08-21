@@ -9465,3 +9465,32 @@ hr.transparent {
 .white-bg{
   background-color: #fff;
 }
+
+.blue-bg{
+  background-color: #a4b7c1;
+}
+
+.margin-bottom-padding{
+  margin-bottom:-20px !important;
+}
+
+.margin-bottom-padding-10{
+  margin-bottom:-8px !important;
+}
+
+.fontsize-8{
+  font-size:8pt  !important;
+}
+
+.fontsize-9{
+  font-size:9pt  !important;
+}
+
+.fontsize-10{
+  font-size:10pt  !important;
+}
+
+.removeParticular{
+  padding: 0.5rem 0.5rem !important;
+  margin-top: 3px !important;
+}

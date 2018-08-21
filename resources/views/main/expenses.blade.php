@@ -2,11 +2,11 @@
 @section('content')
 
 <div class="container-fluid">
-
     <div class="animated fadeIn">
-        <div class="row">
+
+        <div class="row margin-bottom-padding">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <h2  style="color: #20a8d8;"> Church Expenses </h2> &nbsp
+                <h3  style="color: #20a8d8;"> Church Expenses </h2> &nbsp
                 <!--Session Info Message-->
 
                 <div class="col-md-12 col-lg-12">
@@ -21,21 +21,21 @@
 
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="pull-right">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addNewExpense">
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addNewExpense">
                         <i class="fa fa-plus"></i> &nbsp; Add Expense
                     </button>
-                    <button type="button" class="btn btn-warning" data-toggle="modal" 
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" 
                             data-target="#editModal"><i class="fa fa-edit"></i> &nbsp; Edit Expense
                     </button>
-                    <button type="button" class="btn btn-danger">
+                    <button type="button" class="btn btn-danger btn-sm">
                         <i class="fa fa-trash"></i> &nbsp; Delete Expense
                     </button>
                 </div>
             </div>
         </div>
-        <br>
+
         <!--Search-->
-        <div class="row">
+        <div class="row mt-0">
             <div class="col-lg-12">
                 <div class="controls">
                     <div class="input-group">
@@ -52,8 +52,8 @@
         <!--Expenses' Table -->
         <div class="row">
             <div class="col-lg-12">
-                <table class="table table-responsive-sm table-outline text-center white-bg">
-                    <thead class="thead-light">
+                <table class="table table-responsive-sm table-outline table-sm text-center white-bg fontsize-9">
+                    <thead class="thead-light fontsize-10">
                         <tr>
                             <th>ID</th>
                             <th>Date</th>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="col-sm-12">
-                        <form method="POST" action="{{ url('/insertExpense') }}">
+                        <form method="POST" action="{{ url('/insertExpense') }}" class="form-horizontal">
                             {{csrf_field()}}
                             <fieldset>
                                 <!--Error Handling-->
@@ -125,55 +125,67 @@
                                 @endif
                                 <!--End of Error Handling-->
 
-                                <div class="form-group">
-                                    <label for="lbl-date">Date: </label> 
-                                    <input type="date" class="form-control"  name="expense-date" id="expense-date" >
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="lbl-receiver">Receiver:</label>
-                                    <input type="text" class="form-control" name="expense-receiver" id="expense-receiver" placeholder="Enter Receiver">
+                                <div class="form-group row">
+                                    <label for="expense-date" class="col-md-3 col-form-label">Date: </label>
+                                    <div class="col-md-9">
+                                        <input type="date" class="form-control"  name="expense-date" id="expense-date" >
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="lbl-type">Type of Service:</label>
-                                    <select class="form-control" name="service-type">
-                                        <option value="Main">Main Service</option>
-                                        <option value="gospel-hour">Gospel Hour Service</option>
-                                        <option value="prayer-meeting">Prayer Meeting Service</option>
-                                    </select>
+                                <div class="form-group row">
+                                    <label for="expense-receiver" class="col-md-3 col-form-label">Receiver:</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="expense-receiver" id="expense-receiver" placeholder="Enter Receiver">
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="lbl-type">Select Ministry:</label>&nbsp
-                                    <select name="ministry-list" class="form-control">
-
-                                        @if(count($ministries)>0)
-                                        @foreach($ministries->all() as $ministries)
-
-
-                                        <option value="Main">{{ $ministries->name }}</option>
-
-
-                                        @endforeach
-                                        @endif
-
-
-                                    </select>
+                                <div class="form-group row">
+                                    <label for="service-type" class="col-md-3 col-form-label">Service:</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control" name="service-type">
+                                            <option value="Main">Worship Service</option>
+                                            <option value="gospel-hour">Gospel Hour Service</option>
+                                            <option value="prayer-meeting">Prayer Meeting Service</option>
+                                        </select>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="lbl-vouchernum">Voucher number:</label>
-                                    <input type="number" class="form-control" name="ministry-funds" id="ministry-funds" placeholder="Enter Voucher Number">
+                                <div class="form-group row">
+                                    <label for="ministry-list" class="col-md-3 col-form-label">Ministry:</label>
+                                    <div class="col-md-9">
+                                        <select name="ministry-list" class="form-control">
+
+                                            @if(count($ministries)>0)
+                                            @foreach($ministries->all() as $ministries)
+
+
+                                            <option value="Main">{{ $ministries->name }}</option>
+
+
+                                            @endforeach
+                                            @endif
+
+
+                                        </select>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="lbl-amount">Amount:</label>
-                                    <input type="number" class="form-control" name="ministry-funds" id="ministry-funds" 
+                                <div class="form-group row">
+                                    <label for="vouchernum" class="col-md-3 col-form-label">Voucher No:</label>
+                                    <div class="col-md-9">
+                                        <input type="number" class="form-control" name="vouchernum" id="vouchernu" placeholder="Enter Voucher Number">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="amount" class="col-md-3 col-form-label">Amount:</label>
+                                    <div class="col-md-9">
+                                    <input type="number" class="form-control" name="amount" id="amount" 
                                            placeholder="&#8369;" disabled>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group row">
                                     <button class="btn btn-primary form-control" id="btn-add-particulars" type="button" onclick="addParticular()">Add Particulars</button>
                                 </div>
                                 <!--ADD PARTICULAR FORMS-->
@@ -215,78 +227,66 @@
     <script>
         var counter = 0;
         function addParticular(){
-
-
             //create div in name
-            var create_div1 = document.createElement('div');
-            create_div1.setAttribute('class','form-group group1 ');
-            //create label
-            var particular_label = document.createElement('label');
-            var lbl_particular = document.createTextNode("Particulars: ");
-            particular_label.setAttribute("for", "lbl_particulars");
+            counter++;
+            var particularNo = "particular" + counter;
 
-            //create textfield
-            var particular_text = document.createElement('input');
-            particular_text.setAttribute('placeholder','Enter Name of Particulars')
-            particular_text.setAttribute('class', 'form-control particular-name');
-            particular_text.setAttribute('type', 'text');
+            var create_div1 = document.createElement('div');
+            create_div1.setAttribute('class','form-group row margin-bottom-padding-10');
+            create_div1.setAttribute('id', particularNo);
 
             //create div in amount
             var create_div2 = document.createElement('div');
-            create_div2.setAttribute('class','form-group');
+            create_div2.setAttribute('class','form-group col-md-6');
 
-            //create label2
-            var particular_label2 = document.createElement('label');
-            var lbl_particular2 = document.createTextNode("Amount: ");
-            particular_label2.setAttribute("for", "lbl_amount");
+            //create textfield
+            var particular_text = document.createElement('input');
+            particular_text.setAttribute('placeholder','Particulars')
+            particular_text.setAttribute('class', 'form-control particular-name');
+            particular_text.setAttribute('type', 'text');
+
+            create_div2.appendChild(particular_text);
+
+            //create div in amount
+            var create_div3 = document.createElement('div');
+            create_div3.setAttribute('class','form-group col-md-5');
 
             //create textfield2
             var particular_text2 = document.createElement('input');
-            particular_text2.setAttribute('placeholder','Enter Amount of Particulars')
+            particular_text2.setAttribute('placeholder','Amount')
             particular_text2.setAttribute('class', 'form-control particular-amount');
-            particular_text2.setAttribute('type', 'text');
+            particular_text2.setAttribute('type', 'number');
+
+            create_div3.appendChild(particular_text2);
 
             //create div for buttton remove particular
-            var create_div3 = document.createElement('div');
-            create_div3.setAttribute('class','form-group');
+            var create_div4 = document.createElement('div');
+            create_div4.setAttribute('class','form-group');
 
             //create button
             var particular_remove = document.createElement('button');
-            particular_remove.setAttribute('class','btn btn-primary form-control');
-            particular_remove.setAttribute('onclick','removeParticular()');
-            particular_remove.innerHTML = 'Remove Particular';
+            particular_remove.setAttribute('class','btn btn-danger btn-sm rounded removeParticular');
+            particular_remove.setAttribute('type','button');
+            particular_remove.setAttribute('id','removePartBtn' + counter);
+            particular_remove.onclick = function () {
+                counter--;
+                document.getElementById(particularNo).remove();
+                this.remove();
+            }
+            //create button icon
+            var particular_remove_i = document.createElement('i');
+            particular_remove_i.setAttribute('class','fa fa-window-close');
 
-            //append to div in name
-            create_div1.appendChild(lbl_particular);
-            create_div1.appendChild(particular_text);
+            particular_remove.appendChild(particular_remove_i);
+            create_div4.appendChild(particular_remove);
 
-            //append to div of amount
-            create_div2.appendChild(lbl_particular2);
-            create_div2.appendChild(particular_text2);
-
-            //append to div of button
-            create_div3.appendChild(particular_remove);
-
-            var form = document.createElement('div');
-            form.setAttribute('id','added-form');
-            form.style.display='block';
-            form.appendChild(create_div1);
-            form.appendChild(create_div2);
-            form.appendChild(create_div3);
+            create_div1.appendChild(create_div2);
+            create_div1.appendChild(create_div3);
+            create_div1.appendChild(create_div4);
 
             //append to the main div
             var wrapper = document.getElementById("particulars-form");
-            wrapper.appendChild(form);
-
-            /* counter++;*/
-        }
-
-        function removeParticular() {
-
-            var removethis = document.getElementById('added-form');
-            removethis.style.display = 'none';
-
-
+            wrapper.appendChild(create_div1);
         }
 
     </script>
